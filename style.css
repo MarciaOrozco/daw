@@ -37,7 +37,6 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
-    height: 20px;
 }
 
 .nav-list{
@@ -98,6 +97,13 @@ figcaption {
 .section-title{
     font-size: 30px;
     font-weight: 200;
+    font-family: Georgia, helvetica, sans-serif;
+}
+
+.section-paragraph{
+    font-size: 18px;
+    font-family: Georgia, helvetica, sans-serif;
+    line-height: 1.5;
 }
   
 .news-container {
@@ -113,6 +119,7 @@ figcaption {
     font-size: 48px;
     font-weight: 200;
     margin: 20px 0px;
+    font-family: Georgia, helvetica, sans-serif;
 }
 
 .sub-title{
@@ -149,6 +156,7 @@ footer{
     text-decoration: none;
     color: #fff;
     font-size: 12px;
+    padding-right: 15px;
 }
 
 .footer-item-left{
@@ -169,4 +177,170 @@ footer{
 .footer-list-title{
     color: #fff;
     font-size: 12px;
+}
+
+.footer-mobile-view{
+    display: none;
+}
+
+/* Estilos sin flexbox para mobile */
+@media only screen and (max-width: 500px) {
+    .top-navigation{
+        padding: 20px 20px;
+    }
+    .nav-logo{
+        max-width: 200px;
+    }
+
+    .navigation-link{
+        display: none;
+    }
+
+    .title{
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+
+    .nav-list{
+        padding: 12px 0px 12px 24px;
+    }
+
+    nav ul li {
+        padding-right: 12px;
+    }
+
+    nav ul li a {
+        padding: 0px;
+        white-space: nowrap;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .news-container {
+        padding: 20px 24px;
+    }
+
+    .header-news-container{
+        padding: 32px 24px 0px 24px;
+    }
+
+    .sub-title-container{
+        padding: 32px 24px 16px 24px;
+    }
+
+    .sub-title{
+        margin-top:  0px;
+    }
+
+    .date-container{
+        margin-top: 32px;
+    }
+
+    .image-container{
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    figure img {
+        max-width: none;
+        height: auto;
+    }
+
+    figcaption{
+        padding: 8px 24px 16px 24px;
+    }
+
+    .news-img{
+        width: 100vw;
+    }
+
+    footer{
+        display: block;
+        text-align: center;
+    }
+
+    .footer-item-left{
+        margin: auto;
+    }
+
+    .footer-mobile-view{
+        padding: 20px 0px;
+        display: block;
+    }
+
+    .footer-list-right{
+        padding-bottom: 50px;
+    }
+
+    .desktop-view{
+        display: none;
+    }
+}
+
+/* Estilos sin flexbox para tablet */
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+    .top-navigation{
+        padding: 30px 48px;
+    }
+
+    .nav-list{
+        padding: 20px 48px;
+    }
+
+    .nav-logo{
+        max-width: 80%;
+    }
+
+    .navigation-tablet{
+        display: none;
+    }
+
+    .news-container {
+        max-width: 500px;
+    }
+
+    .header-news-container{
+        padding: 40px 48px 0px 48px;
+    }
+
+    .sub-title-container{
+        padding: 32px 48px 40px 48px;
+    }
+
+    .image-container{
+        padding: 0px 48px;
+    }
+
+    figure img{
+        max-width: 150%;
+    }
+
+    footer{
+        display: block;
+        text-align: center;
+    }
+
+    .footer-item-left{
+        margin: auto;
+    }
+
+    .footer-mobile-view{
+        padding: 20px 0px;
+    }
+
+    .desktop-view{
+        display: none;
+    }
+
+    .footer-mobile-view{
+        display: inline-block;
+    }
+
+    .footer-list-title{
+        float: left;
+    }
+
+    .footer-list-right{
+        padding-right: 250px;
+    }
 }
